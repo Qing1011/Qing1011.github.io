@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qing Yao</title>
+  <meta name="description" content="Qing Yao — research scientist focusing on infectious-disease modeling, mobility, and complex systems." />
+  <style>
+    :root { --maxw: 720px; }
+    html { font-size: 18px; }
+    body {
+      margin: 0; padding: 2.5rem 1.25rem 4rem;
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      line-height: 1.6; color: #111; background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6e6e6; background: #101010; }
+      a { color: #8ab4f8; }
+    }
+    main { max-width: var(--maxw); margin: 0 auto; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; }
+    p { margin: 0 0 1rem; }
+    .muted { opacity: 0.8; }
+    a { color: #0645ad; text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    hr { border: 0; border-top: 1px solid rgba(0,0,0,.12); margin: 1.5rem 0; }
+    ul { padding-left: 1.2rem; margin: 0.25rem 0 0.75rem; }
+    li { margin: 0.25rem 0; }
+    .inline-links a { margin-right: 1rem; }
+    .small { font-size: 0.95rem; }
+    .note { font-style: italic; opacity: 0.8; }
+    @media print { a[href]::after { content: " (" attr(href) ")"; font-size: 90%; } }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var user = 'qing.yao';   // TODO: change to your email user (e.g., qy2290)
+      var host = 'columbia.edu'; // TODO: change to your email domain
+      var el = document.getElementById('email');
+      if (el) {
+        el.textContent = user + '@' + host;
+        el.href = 'mailto:' + user + '@' + host;
+      }
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Qing Yao</h1>
+    <p class="muted small">Postdoctoral Research Scientist, Mailman School of Public Health (EHS), Columbia University</p>
+
+    <p>
+      I study infectious-disease dynamics, human mobility, and complex systems.
+      My recent work covers superspreading, adaptive mobility during hurricanes, and behavior-informed models.
+    </p>
+
+    <p class="inline-links small">
+      <a href="#" id="email" aria-label="email">[enable JS to view email]</a>
+      <a href="https://scholar.google.com/" rel="noopener">Google Scholar</a>
+      <a href="https://dblp.org/" rel="noopener">DBLP</a>
+      <a href="/cv.pdf" rel="noopener">CV</a>
+      <a href="/papers/" rel="noopener">Papers</a>
+    </p>
+
+    <hr />
+
+    <p class="note small">A very short homepage by design. If you are looking for publications, please see my
+      <a href="https://scholar.google.com/" rel="noopener">Google Scholar</a> or <a href="/papers/">papers</a> page.</p>
+
+    <h2 class="small">Selected highlights</h2>
+    <ul class="small">
+      <li>
+        <strong>Adaptive mobility responses during Hurricanes Helene and Milton (2024)</strong> — Brief communication on county-level adaptations; preprint on medRxiv.
+      </li>
+      <li>
+        <strong>Superspreading & Bayesian GCN</strong> — Inferring dispersion and time-varying R<sub>t</sub> with graph-based methods at US county scale.
+      </li>
+      <li>
+        <strong>Behavior & mobility</strong> — Linking decision preferences (agency, loss aversion, temporal discounting) with NYC mobility via GAM/RF.
+      </li>
+    </ul>
+
+    <hr />
+
+    <p class="small muted">Last updated: Sept 23, 2025</p>
+  </main>
+</body>
+</html>
