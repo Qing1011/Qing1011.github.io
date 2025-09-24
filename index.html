@@ -18,8 +18,15 @@
       a { color: #8ab4f8; }
     }
     main { max-width: var(--maxw); margin: 0 auto; }
-    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; }
-    p { margin: 0 0 1rem; }
+    h1 {
+      font-size: 2.6rem;   /* Larger font for name */
+      line-height: 1.2;
+      margin: 0 0 0.75rem;
+    }
+    p, li, h2 {
+      font-size: 1rem;     /* Keep all body text the same size */
+      margin: 0 0 1rem;
+    }
     .muted { opacity: 0.8; }
     a { color: #0645ad; text-decoration: none; }
     a:hover, a:focus { text-decoration: underline; }
@@ -27,61 +34,42 @@
     ul { padding-left: 1.2rem; margin: 0.25rem 0 0.75rem; }
     li { margin: 0.25rem 0; }
     .inline-links a { margin-right: 1rem; }
-    .small { font-size: 0.95rem; }
     .note { font-style: italic; opacity: 0.8; }
     @media print { a[href]::after { content: " (" attr(href) ")"; font-size: 90%; } }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var user = 'qing.yao';   // TODO: change to your email user (e.g., qy2290)
-      var host = 'columbia.edu'; // TODO: change to your email domain
-      var el = document.getElementById('email');
-      if (el) {
-        el.textContent = user + '@' + host;
-        el.href = 'mailto:' + user + '@' + host;
-      }
-    });
-  </script>
 </head>
 <body>
   <main>
     <h1>Qing Yao</h1>
-    <p class="muted small">Postdoctoral Research Scientist, Mailman School of Public Health (EHS), Columbia University</p>
+    <p class="muted">Associate Research Scientist, Mailman School of Public Health (EHS), Columbia University</p>
 
     <p>
-      I study infectious-disease dynamics, human mobility, and complex systems.
-      My recent work covers superspreading, adaptive mobility during hurricanes, and behavior-informed models.
+      I study complex systems and the dynamics on and of networks. Much of my recent work focuses on superspreading in infectious-disease dynamics, behavior-informed models, and adaptive mobility during hurricanes—topics that reveal how people and systems respond under stress. During my PhD in physics at Imperial College London, I investigated higher-order interactions, temporal networks, and financial systems, which continues to shape the way I think about interconnected problems. I am also drawn to machine learning, data science, and the ways questions of human behavior and social equity can be explored through theory and data. You can find my  <a href="/cv.pdf" rel="noopener">CV</a>.
     </p>
 
-    <p class="inline-links small">
-      <a href="#" id="email" aria-label="email">[enable JS to view email]</a>
-      <a href="https://scholar.google.com/" rel="noopener">Google Scholar</a>
-      <a href="https://dblp.org/" rel="noopener">DBLP</a>
-      <a href="/cv.pdf" rel="noopener">CV</a>
-      <a href="/papers/" rel="noopener">Papers</a>
+    <p>
+      My email address is <a href="mailto:qy2290@cumc.columbia.edu">qy2290@cumc.columbia.edu</a> and the list of publications can be found on 
+      <a href="https://scholar.google.com/citations?user=xjrfQTsAAAAJ&hl=en" rel="noopener">Google Scholar</a>.
     </p>
 
     <hr />
 
-    <p class="note small">A very short homepage by design. If you are looking for publications, please see my
-      <a href="https://scholar.google.com/" rel="noopener">Google Scholar</a> or <a href="/papers/">papers</a> page.</p>
-
-    <h2 class="small">Selected highlights</h2>
-    <ul class="small">
+    <h2>Selected highlights</h2>
+    <ul>
       <li>
-        <strong>Adaptive mobility responses during Hurricanes Helene and Milton (2024)</strong> — Brief communication on county-level adaptations; preprint on medRxiv.
+        <strong>Adaptive mobility responses during Hurricanes Helene and Milton (2024)</strong> — Brief communication on county-level adaptations; preprint on <a href="https://www.medrxiv.org/content/10.1101/2025.07.02.25330752v1.full.pdf" rel="noopener">medRxiv</a>. News story from The Washington Post, <a href="https://www.washingtonpost.com/climate-environment/2025/07/07/hurricane-helene-evacuation-north-carolina-warnings/" rel="noopener">"A new era of floods has arrived. America isn’t prepared."</a>.
       </li>
       <li>
         <strong>Superspreading & Bayesian GCN</strong> — Inferring dispersion and time-varying R<sub>t</sub> with graph-based methods at US county scale.
       </li>
       <li>
-        <strong>Behavior & mobility</strong> — Linking decision preferences (agency, loss aversion, temporal discounting) with NYC mobility via GAM/RF.
+        <strong>Behavior & mobility</strong> — Linking decision preferences (agency, loss aversion, temporal discounting) with NYC mobility via GAM/RF; preprint on <a href="https://www.medrxiv.org/content/10.1101/2025.09.08.25335351v1.full.pdf" rel="noopener">medRxiv</a>.
       </li>
     </ul>
 
     <hr />
 
-    <p class="small muted">Last updated: Sept 23, 2025</p>
+    <p class="muted">Last updated: Sept 23, 2025</p>
   </main>
 </body>
 </html>
